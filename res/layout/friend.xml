@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <RelativeLayout
+        android:background="@drawable/bg_friend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <com.lepower.widget.RoundImageView 
+	        android:layout_width="80dp"
+	        android:layout_height="80dp"
+	        android:layout_alignParentLeft="true"
+	        android:background="@drawable/user_logo"
+	        android:id="@+id/iv_enter_photo"/>       
+       
+       <TextView 
+           android:id="@+id/tv_nickname"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@+id/iv_enter_photo"
+           android:layout_marginTop="30dp"
+           android:text="林丹"
+           android:textColor="@color/white"/>
+       
+       <TextView 
+           android:id="@+id/tv_sex"
+           android:layout_marginLeft="20dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/iv_enter_photo"
+           android:text="男"
+           android:textColor="@color/white"
+           />
+       
+       <TextView 
+           android:id="@+id/tv_age"
+           android:layout_toRightOf="@+id/tv_sex"
+           android:layout_below="@+id/iv_enter_photo"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="23"
+           android:textColor="@color/white"
+           android:layout_marginLeft="10dp"/>
+       
+       <Button 
+           android:id="@+id/btn_add"
+           android:layout_below="@+id/tv_sex"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="已关注"/>
+    </RelativeLayout>
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="详细资料"
+        android:textColor="#33ff33"
+        android:gravity="center" />
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:background="#ffe4e1"
+        android:layout_alignParentBottom="true"/>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="运动等级"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"/>
+        
+        <TextView 
+            android:text="跑步达人"
+            android:id="@+id/tv_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:background="#ffe4e1"
+        android:layout_alignParentBottom="true"/>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="关注的人"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"/>
+        
+        <TextView 
+            android:text="5"
+            android:id="@+id/tv_count_of_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:background="#ffe4e1"
+        android:layout_alignParentBottom="true"/>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="总卡路里数/千卡"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"/>
+        
+        <TextView 
+            android:text="100"
+            android:id="@+id/tv_calorieSum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:background="#ffe4e1"
+        android:layout_alignParentBottom="true"/>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="总距离"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"/>
+        
+        <TextView 
+            android:text="500"
+            android:id="@+id/tv_allmeter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+    
+     <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:background="#ffe4e1"
+        android:layout_alignParentBottom="true"/>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="总步数"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"/>
+        
+        <TextView 
+            android:text="100"
+            android:id="@+id/tv_allStep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:background="#ffe4e1"
+        android:layout_alignParentBottom="true"/>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="运动总时间"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"/>
+        
+        <TextView 
+            android:text="500"
+            android:id="@+id/tv_alltime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+    
+    
+    
+
+</LinearLayout>

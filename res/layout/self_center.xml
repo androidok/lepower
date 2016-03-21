@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:menhao="http://schemas.android.com/apk/res/com.lepower"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/background_image"
+        android:orientation="vertical">
+        
+        <RelativeLayout 
+            android:id="@+id/rl_add"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            
+            <ImageButton 
+            	android:id="@+id/add_friend"
+            	android:background="@drawable/left_icon_follow_down"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_alignParentRight="true"
+            	android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/rl_add"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" >
+
+            <ImageButton
+                android:id="@+id/enter_self_center"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true" />
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="林丹"
+                android:textSize="15sp"
+                android:layout_toRightOf="@+id/enter_self_center"
+                android:layout_marginTop="30dp"/>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="羽坛健将"
+                android:textSize="15sp"
+                android:layout_toRightOf="@+id/enter_self_center"
+                android:layout_marginTop="50dp" />
+        </RelativeLayout>
+        
+ 
+            
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+            
+           <TextView 
+               style="@style/TvStyle"
+               android:id="@+id/tv_dongtai"
+               android:text="动态\n0"/>
+           
+           <TextView 
+               style="@style/TvStyle"
+               android:id="@+id/tv_fensi"
+               android:text="粉丝\n0"/>
+           
+           <TextView 
+               style="@style/TvStyle"
+               android:id="@+id/tv_guanzhu"
+               android:text="关注\n0"/>         
+        </LinearLayout>
+            
+        </RelativeLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="4">
+        	
+            <com.lepower.widget.SettingItemView
+                android:id="@+id/siv_run"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                menhao:title="我的运动" />
+            
+            <com.lepower.widget.SettingItemView
+                android:id="@+id/siv_dongtai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                menhao:title="我的动态" />
+            
+            <com.lepower.widget.SettingItemView
+                android:id="@+id/siv_guanzhu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                menhao:title="我的关注" />
+            
+            <com.lepower.widget.SettingItemView
+                android:id="@+id/siv_fensi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                menhao:title="我的粉丝" />
+            
+            <com.lepower.widget.SettingItemView
+                android:id="@+id/siv_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                menhao:title="设置" />
+        </LinearLayout>
+
+</LinearLayout>
